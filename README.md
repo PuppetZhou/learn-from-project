@@ -36,6 +36,8 @@
 
 教学设计参考 Karpathy、3Blue1Brown、The Carpentries 和相关教学研究；具体提炼及适用边界见 [教学原则](references/teaching-methods.md)与[来源卡片](references/source-cards.md)。
 
+项目式实操另参考 [Single-cell Best Practices 等外部材料](references/practical-project-resources.md)，用于学习研究问题、方法依据、代码与结果解释的组织方式；按任务选读，不作为固定课表。
+
 ## 目录
 
 ```text

@@ -37,7 +37,7 @@ description: 面向基础不均衡的学习者，从实际任务或知识问题�
 | 带我逐步写；我想自己实现 | [引导实操](references/guided-practice.md) | 能运行的最小任务、逐步增加复杂性 |
 | 教我排错；为什么慢；怎样优化设计 | [调试与优化](references/debugging-and-optimization.md) | 预期与实际差异、证据和成本 |
 
-教学经验集中在 [教学原则与场景对应](references/teaching-methods.md)，首次使用时建议参考，后续按需查阅。原文短摘、定位与推导边界见 [来源卡片](references/source-cards.md)。需要参考实际讲解措辞时按原则文档加载一个 `assets/worked-examples/` 范例；这些是可改写的原创输出样本，不是额外强制指令。VEP 与 ESM 的课程衔接及行为验收见 [示范与行为验收](references/examples-and-checks.md)。不默认加载全部案例。
+教学经验集中在 [教学原则与场景对应](references/teaching-methods.md)，首次使用时建议参考，后续按需查阅。原文短摘、定位与推导边界见 [来源卡片](references/source-cards.md)。需要参考实际讲解措辞时按原则文档加载一个 `assets/worked-examples/` 范例；这些是可改写的原创输出样本，不是额外强制指令。VEP 与 ESM 的课程衔接及行为验收见 [示范与行为验收](references/examples-and-checks.md)。不默认加载全部案例。需要参考完整项目如何组织实操时，按需查阅[项目式实操参考](references/practical-project-resources.md)，其中收录 Single-cell Best Practices 的代表章节与适用边界。
 
 ## 抓住关键与控制深度
 
