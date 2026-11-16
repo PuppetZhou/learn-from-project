@@ -43,4 +43,4 @@ Obsidian 的本机默认库位于 `~/.config/research-skill-kit/local.json` 的 
 
 教学 skill 来自 [PuppetZhou/learn-from-project](https://github.com/PuppetZhou/learn-from-project)，导入提交为 `8bffd4f58935b589b42c99d60acc169b3022029d`，保留原有教学正文、参考、案例与 Git 历史。Obsidian skill 来自本机已有版本，按实际笔记使用反馈迭代；两者的参考来源记在各自目录内。
 
-当前远端 `origin` 仍指向原教学仓库，kit 改造保存在本地 `kit/initial` 分支。以 `skills/` 为维护源；原教学仓库后续更新可按差异移植。仓库尚未指定开源许可证。
+当前远端 `origin` 仍指向原教学仓库，kit 改造位于 `kit/initial` 分支。以 `skills/` 为维护源；原教学仓库后续更新可按差异移植。仓库尚未指定开源许可证。
