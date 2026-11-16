@@ -1,50 +1,91 @@
-# Learn from Project
+# Research Skill Kit
 
-一个帮助你在真实项目中学习的 AI 教学 skill。帮助学习者根据当前问题补基础、理解原理、分析设计并逐渐独立应用，不预设学科或编程水平。
+面向科研学习与知识积累的个人 skill 集合。每个 skill 独立完成一种任务，统一源码、安装与维护方式；只加载当前任务需要的指引。
 
-从当前任务出发，补足必要基础，讲清楚“是什么、为什么、怎么做、怎样验证”，逐渐培养独立解释、设计和实现小任务的能力。现有案例包括 VEP 数据处理和蛋白质语言模型 ESM，但它们只是示例，不限定适用领域或教学顺序。
+## 选择 skill
 
-## 适用场景
+| Skill | 主要交付 | 示例 |
+| --- | --- | --- |
+| [learn-from-project](skills/learn-from-project/SKILL.md) | 根据当前问题和基础，讲清知识、公式、代码与项目设计，按需引导实操 | “用 $learn-from-project 带我读懂这个 ESM 项目的数据流。” |
+| [obsidian-knowledge-curator](skills/obsidian-knowledge-curator/SKILL.md) | 整理可持续查阅的笔记与知识库，统一排版、精简内容、保留逻辑衔接 | “用 $obsidian-knowledge-curator 整理 PLM 笔记，保留公式和承接句。” |
 
-- **研究项目入门**：先建立整体地图，按阶段学习基础与比较方法，逐步完成可运行 demo、分析结果，再转向独立探索；详见[研究项目学习指南](references/research-project-learning.md)。
-- **补基础**：任务所需的领域知识、计算思想与操作技能、数学及模型原理；具体内容按需决定。
-- **读代码与项目**：理解语法、执行过程、仓库入口、模块职责和依赖。
-- **设计与实操**：从任务目标逐层拆解步骤，选择数据结构，组织函数，编写小脚本。
-- **调试与优化**：分析预期与实际差异，用证据定位问题，理解性能和维护成本。
+学习知识或代码由教学 skill 处理；整理笔记由 Obsidian skill 处理。用户要求“教会我，并保存为笔记”时，先教学，再把已解释的内容、来源和未决问题交给笔记 skill。两者可以独立安装，没有相互依赖；纯教学不自动写入 vault，纯格式整理不自动扩展为课程。
 
-## 如何使用
-
-让能够读取本地文件的 AI 助手先阅读 [SKILL.md](SKILL.md)，并说明你的任务、已有基础和希望讲解的深度。例如：
-
-> 请按照 learn-from-project/SKILL.md 教我当前的 VEP 项目。我有生物学背景，但不懂 VCF。先展示输入文件长什么样，再解释为什么这样处理。
-
-> 我已经理解输入格式，但不知道如何开始写脚本。请从目标、输入输出和处理步骤出发，解释函数应该怎样拆分，并带我实现核心逻辑。
-
-> 请拆解这个仓库的一次运行过程，解释入口、数据流和模块之间的联系，再讨论一项有依据的改进。
-
-> 请解释这个公式的含义和推导，用一个小数值例子连接到代码。
-
-> 请带我从基础开始做一个生物学机器学习 demo。每次推进一个阶段，解释并比较有关方法，代码按阶段分开、保持简单；先从研究问题和数据理解开始。
-
-根据实际保存位置调整路径。也可按所用 AI 工具的技能安装方式安装整个目录；自动发现与调用方式取决于工具。
-
-## 教学方式
-
-先理解学习目标和当前障碍，再选择、组合或调整教学方式。场景指南是可选参考，不是固定教案；未列出的主题和教学方式也可以采用。以具体例子连接概念、公式和代码，解释设计理由，通过预测、反思和变式应用检查理解。
-
-主要使用清晰的文字、短代码和小表格，图片按需使用。不会把每个问题都扩展成完整课程，也不会强制你通过测验才能获得答案。教学练习与正式项目产物分开。
-
-教学设计参考 Karpathy、3Blue1Brown、The Carpentries 和相关教学研究；具体提炼及适用边界见 [教学原则](references/teaching-methods.md)与[来源卡片](references/source-cards.md)。
-
-项目式实操另参考 [Single-cell Best Practices 等外部材料](references/practical-project-resources.md)，用于学习研究问题、方法依据、代码与结果解释的组织方式；按任务选读，不作为固定课表。
-
-## 目录
+## 目录与维护原则
 
 ```text
-learn-from-project/
-├── SKILL.md                 主入口：场景选择与通用教学约定
-├── references/              场景指南、教学依据与行为验收用例
-└── assets/worked-examples/   可改写的原创讲解范例
+research-skill-kit/
+├── skills/
+│   ├── learn-from-project/
+│   └── obsidian-knowledge-curator/
+├── scripts/                 安装、状态与结构检查
+├── tests/                   管理脚本的文件操作检查
+├── docs/                    维护规范与来源记录
+├── AGENTS.md                修改本仓库时的约定
+└── README.md                面向使用者的索引
 ```
 
-当前为迭代中的第一版，已做文件结构和示例检查，并完成一次独立代理的蛋白质语言模型试教与主代理内容审查。这验证了一个场景下的输出表现，不代表已验证学习效果；仍需真实学习者反馈。外部原文短摘与原创案例分别标明来源，不代表相关作者对本项目的认可。
+每个 skill 以 `SKILL.md` 为入口，使用 `references/` 放按需指导，`assets/` 放输出范例，`scripts/` 放必要工具，`agents/openai.yaml` 放界面元数据。按需创建目录，不要求每个 skill 都有脚本或模板。统一的是封装方式，教学过程和笔记结构各自维护。
+
+根目录不是第三个 skill；不为每次调用加载整个 kit，也没有必须读取的公共教学总纲。各 skill 的运行资源都位于自己的目录内，单独复制仍可使用。
+
+## 本地安装
+
+需要 Python 3.10+。在仓库根目录执行：
+
+```sh
+python3 scripts/manage.py list
+python3 scripts/manage.py install
+python3 scripts/manage.py status
+```
+
+默认安装到 `${CODEX_HOME:-~/.codex}/skills`，沿用此环境的 skill-installer 位置；其他宿主可指定已支持的发现目录，例如 `--dest ~/.agents/skills`。同一宿主只安装一份，避免重复发现。
+
+安装使用符号链接，指向仓库里的实际目录；源码只有一份，修改后无需复制同步。Codex 支持链接目录并自动检测变化，见[官方 skill 文档](https://learn.chatgpt.com/docs/build-skills)。下个回合可使用新增 skill；若列表未刷新，重启 Codex。
+
+可以只安装一个：
+
+```sh
+python3 scripts/manage.py install learn-from-project
+```
+
+遇到同名目录时默认停止，不覆盖。确认迁移现有本地安装时执行：
+
+```sh
+python3 scripts/manage.py install --replace
+```
+
+原目录或旧链接会被移动到安装目录之外的 `skill-kit-backups/<时间戳>/`，终端显示具体位置。重复安装正确链接不产生新备份。仓库移动后，在新位置重新运行 `install --replace` 修复链接。要恢复旧安装，先确认目标是本 kit 的符号链接，仅删除该链接，再把对应备份移回原路径。
+
+## 本机配置
+
+笔记、学习记录、vault 路径和备份不进入本仓库。Obsidian 默认路径保存在 `~/.config/research-skill-kit/local.json`，可选结构为：
+
+```json
+{
+  "obsidian": {
+    "vault": "/absolute/path/to/your/vault"
+  }
+}
+```
+
+用户当次指定的路径优先。没有配置时询问目标；教学 skill 不读取无关的 Obsidian 配置。
+
+## 检查与新增
+
+结构检查需要 PyYAML；建议使用独立环境：
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python scripts/validate.py
+python3 -m unittest discover -s tests -v
+```
+
+新增时在 `skills/<skill-name>/` 创建独立入口和必要资源，更新本页索引及来源记录，然后检查、安装。管理脚本自动发现新的 `SKILL.md`，无需再维护一份机器清单。具体规范与行为验收见[维护指南](docs/maintaining.md)。结构检查不能证明教学效果或科学结论正确。
+
+## 版本与上游
+
+本 kit 从原教学仓库克隆，保留完整 Git 历史，在 `kit/initial` 分支完成目录迁移。来源版本见[来源记录](docs/provenance.md)。当前 Git 远端 `origin` 仍是原教学仓库，尚未创建或推送新的远端。
+
+后续以本 kit 中的 `skills/` 为维护源。原教学仓库继续独立更新时，先 `git fetch origin`，比较对应改动后移植到 `skills/learn-from-project/`；不要直接用原单 skill 根目录覆盖整个 kit。决定将原仓库升级为 kit 或另建 kit 仓库后，再配置正式远端和发布分支。
