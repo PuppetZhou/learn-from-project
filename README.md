@@ -1,50 +1,46 @@
-# Learn from Project
+# Research Skill Kit
 
-一个帮助你在真实项目中学习的 AI 教学 skill。帮助学习者根据当前问题补基础、理解原理、分析设计并逐渐独立应用，不预设学科或编程水平。
+面向科研学习与知识积累的个人 skill 集合。每个 skill 独立完成一种任务，通过简短入口按需读取参考资料。
 
-从当前任务出发，补足必要基础，讲清楚“是什么、为什么、怎么做、怎样验证”，逐渐培养独立解释、设计和实现小任务的能力。现有案例包括 VEP 数据处理和蛋白质语言模型 ESM，但它们只是示例，不限定适用领域或教学顺序。
+## Skill 索引
 
-## 适用场景
+| Skill | 用途 | 调用示例 |
+| --- | --- | --- |
+| [learn-from-project](skills/learn-from-project/SKILL.md) | 学知识、公式、代码与项目设计，按当前基础讲解和实操 | “用 $learn-from-project 带我读懂这个项目。” |
+| [obsidian-knowledge-curator](skills/obsidian-knowledge-curator/SKILL.md) | 整理学习笔记、补足理解、建立知识关联 | “用 $obsidian-knowledge-curator 整理 PLM 笔记。” |
 
-- **研究项目入门**：先建立整体地图，按阶段学习基础与比较方法，逐步完成可运行 demo、分析结果，再转向独立探索；详见[研究项目学习指南](references/research-project-learning.md)。
-- **补基础**：任务所需的领域知识、计算思想与操作技能、数学及模型原理；具体内容按需决定。
-- **读代码与项目**：理解语法、执行过程、仓库入口、模块职责和依赖。
-- **设计与实操**：从任务目标逐层拆解步骤，选择数据结构，组织函数，编写小脚本。
-- **调试与优化**：分析预期与实际差异，用证据定位问题，理解性能和维护成本。
+需要“学习后保存为笔记”时，先讲清知识，再把主线、例子和来源整理成笔记。各 skill 也能单独使用。
 
-## 如何使用
-
-让能够读取本地文件的 AI 助手先阅读 [SKILL.md](SKILL.md)，并说明你的任务、已有基础和希望讲解的深度。例如：
-
-> 请按照 learn-from-project/SKILL.md 教我当前的 VEP 项目。我有生物学背景，但不懂 VCF。先展示输入文件长什么样，再解释为什么这样处理。
-
-> 我已经理解输入格式，但不知道如何开始写脚本。请从目标、输入输出和处理步骤出发，解释函数应该怎样拆分，并带我实现核心逻辑。
-
-> 请拆解这个仓库的一次运行过程，解释入口、数据流和模块之间的联系，再讨论一项有依据的改进。
-
-> 请解释这个公式的含义和推导，用一个小数值例子连接到代码。
-
-> 请带我从基础开始做一个生物学机器学习 demo。每次推进一个阶段，解释并比较有关方法，代码按阶段分开、保持简单；先从研究问题和数据理解开始。
-
-根据实际保存位置调整路径。也可按所用 AI 工具的技能安装方式安装整个目录；自动发现与调用方式取决于工具。
-
-## 教学方式
-
-先理解学习目标和当前障碍，再选择、组合或调整教学方式。场景指南是可选参考，不是固定教案；未列出的主题和教学方式也可以采用。以具体例子连接概念、公式和代码，解释设计理由，通过预测、反思和变式应用检查理解。
-
-主要使用清晰的文字、短代码和小表格，图片按需使用。不会把每个问题都扩展成完整课程，也不会强制你通过测验才能获得答案。教学练习与正式项目产物分开。
-
-教学设计参考 Karpathy、3Blue1Brown、The Carpentries 和相关教学研究；具体提炼及适用边界见 [教学原则](references/teaching-methods.md)与[来源卡片](references/source-cards.md)。
-
-项目式实操另参考 [Single-cell Best Practices 等外部材料](references/practical-project-resources.md)，用于学习研究问题、方法依据、代码与结果解释的组织方式；按任务选读，不作为固定课表。
-
-## 目录
+## 组织方式
 
 ```text
-learn-from-project/
-├── SKILL.md                 主入口：场景选择与通用教学约定
-├── references/              场景指南、教学依据与行为验收用例
-└── assets/worked-examples/   可改写的原创讲解范例
+research-skill-kit/
+├── README.md
+├── AGENTS.md
+└── skills/
+    ├── learn-from-project/
+    │   ├── SKILL.md
+    │   ├── references/
+    │   ├── assets/
+    │   └── agents/openai.yaml
+    └── obsidian-knowledge-curator/
+        ├── SKILL.md
+        ├── references/
+        └── agents/openai.yaml
 ```
 
-当前为迭代中的第一版，已做文件结构和示例检查，并完成一次独立代理的蛋白质语言模型试教与主代理内容审查。这验证了一个场景下的输出表现，不代表已验证学习效果；仍需真实学习者反馈。外部原文短摘与原创案例分别标明来源，不代表相关作者对本项目的认可。
+`SKILL.md` 写目标和按需索引；`references/` 写分任务指导；`assets/` 存有用的输出案例。只有实际需要自动化时才在相应 skill 下增加 `scripts/`。各 skill 自己选择合适的工作方式和输出结构。
+
+## 使用与维护
+
+当前两个 skill 已通过 `~/.codex/skills/` 下的符号链接安装；直接编辑本仓库即可更新。其他环境可把所需的整个 skill 目录复制或链接到宿主的技能目录，参见 [Codex skill 文档](https://learn.chatgpt.com/docs/build-skills)。
+
+新增 skill 时创建 `skills/<名称>/SKILL.md`，在 YAML 中写 `name` 和 `description`，添加必要参考并更新本页索引。用一个真实任务查看输出，再据反馈调整。无需安装依赖或运行测试框架。
+
+Obsidian 的本机默认库位于 `~/.config/research-skill-kit/local.json` 的 `obsidian.vault` 字段；当次指定的路径优先。
+
+## 来源与版本
+
+教学 skill 来自 [PuppetZhou/learn-from-project](https://github.com/PuppetZhou/learn-from-project)，导入提交为 `8bffd4f58935b589b42c99d60acc169b3022029d`，保留原有教学正文、参考、案例与 Git 历史。Obsidian skill 来自本机已有版本，按实际笔记使用反馈迭代；两者的参考来源记在各自目录内。
+
+当前远端 `origin` 仍指向原教学仓库，kit 改造位于 `kit/initial` 分支。以 `skills/` 为维护源；原教学仓库后续更新可按差异移植。仓库尚未指定开源许可证。
