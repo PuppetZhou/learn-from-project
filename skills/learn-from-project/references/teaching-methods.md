@@ -17,3 +17,11 @@
 若只有“已分析、建议执行、下一步验证”，改成面向学习者的讲述。若全是抽象名词，选一个具体例子逐步走通。若内容过长，缩小本次主题，保留该主题的解释链，而不是将每段压成关键词。
 
 更多已整理材料：[项目式实操参考](practical-project-resources.md)、[跨场景案例](examples-and-checks.md)。仅在需要对应材料时打开。
+
+## 全局、支架与互动的依据
+
+- [CMU：课程内容与顺序](https://www.cmu.edu/teaching/designteach/design/contentschedule.html) 将学习目标与内容组织联系起来，强调新主题与前面知识的整合。本 skill 据此要求全过程学习先交代阶段目标与关系，再选择局部深度。
+- [4C/ID：完整任务与支持信息](https://www.4cid.org/about/) 以学习任务为主干，区分领域理解与操作时所需的信息。本 skill 借鉴其将理论、操作和整体任务连接的思路，让简化 demo 保留完整主线；不强制照搬其课程设计程序。
+- [University at Buffalo：Scaffolding Content](https://www.buffalo.edu/catt/teach/develop/build/scaffolding.html) 强调根据已有知识、任务复杂度和反馈调整支持，并逐渐减少帮助。本 skill 据此在示范、共同处理和独立尝试之间灵活切换。
+
+以上是教学设计指导及模型设计者的说明。这里的全局路线与互动规则是面向本 skill 的应用，不能据此声称已验证 AI 的教学效果。
