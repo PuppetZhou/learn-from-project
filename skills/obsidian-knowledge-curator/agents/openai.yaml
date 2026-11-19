@@ -1,3 +1,3 @@
 interface:
-  display_name: "Obsidian 知识库整理"
-  short_description: "系统且精简地整理 Obsidian 学习笔记与知识库，保留公式代码与链接"
+  display_name: "Markdown 笔记与知识库"
+  short_description: "制作结构清楚、精炼可读的 Markdown 笔记，适配服务器目录与 Obsidian"

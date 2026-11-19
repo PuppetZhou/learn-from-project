@@ -1,6 +1,19 @@
 # 学习设计与参考
 
-在需要改善解释、示例、复习或主题结构时选读。下列是把研究与写作经验用于笔记的设计取舍，不规定统一模板。
+只在需要参考笔记方案、示例或学习设计时选读；案例及外部网页均非每次必读。下列是把研究与写作经验用于笔记的设计取舍，不规定统一模板。
+
+## 值得借鉴的笔记与教学材料
+
+本轮于 2026-11-19 查阅下列原始材料，选取适合精炼笔记的做法：
+
+| 材料 | 借鉴什么 | 在这里怎样取舍 |
+| --- | --- | --- |
+| [Andy Matuschak 的 evergreen notes](https://notes.andymatuschak.org/Evergreen_notes_should_be_atomic) | 围绕一个主题写完整，用关联连接知识 | 保留理解所需上下文，粒度按复用价值判断；无需每个术语单独建页 |
+| [Cornell 笔记法](https://lsc.cornell.edu/notes.html) | 提炼线索、回忆与反思 | 需要复习时加少量提示问题；普通 Markdown 无需模拟纸张双栏或每篇强制总结 |
+| [The Carpentries 教学设计要点](https://carpentries.github.io/lesson-development-training/instructor/key-points.html) | 按学习目标筛选内容，删去不服务目标的负担 | 先明确这篇笔记回答什么，再决定留下什么，不铺开完整课程 |
+| [Software Carpentry：变量与赋值](https://swcarpentry.github.io/python-novice-gapminder/02-variables.html) | 具体知识点连接短代码、结果及解释 | 借鉴局部示范的组织方式，练习数量和课程栏目按笔记用途取舍 |
+
+这些是有明确来源的实践样例和教学指导，并非对所有人的最优模板。使用时以读者能否理解、回看和复用当前知识为准。
 
 ## 从学习需要选择写法
 
@@ -42,6 +55,6 @@ $$
 
 公式依据：[Illumina Q-score 说明](https://knowledge.illumina.com/instrumentation/general/instrumentation-general-reference_material-list/000006557)。这一例中，符号、数值和变化含义已经对应，无需再用代码重复。若用于复习，可以问：“Q20 到 Q30，估计错误概率如何变化？”读者可由公式核对。
 
-## 工具参考
+## 适用环境
 
-需要补查 Obsidian Markdown 用法时，参考 [官方 Markdown skill](https://github.com/obsidianmd/obsidian-skills/blob/main/plugins/obsidian/skills/obsidian-markdown/SKILL.md)。教学相关资料在上表按具体问题选读，通常不必重新检索整套方法。
+上述内容组织原则适用于普通 Markdown 与 Obsidian。平台专用语法按 [Obsidian 适配](obsidian.md) 选读。

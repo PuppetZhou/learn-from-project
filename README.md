@@ -7,7 +7,7 @@
 | Skill | 用途 | 调用示例 |
 | --- | --- | --- |
 | [learn-from-project](skills/learn-from-project/SKILL.md) | 学知识、公式、代码与项目设计，按当前基础讲解和实操 | “用 $learn-from-project 带我读懂这个项目。” |
-| [obsidian-knowledge-curator](skills/obsidian-knowledge-curator/SKILL.md) | 整理学习笔记、补足理解、建立知识关联 | “用 $obsidian-knowledge-curator 整理 PLM 笔记。” |
+| [obsidian-knowledge-curator](skills/obsidian-knowledge-curator/SKILL.md) | 制作通用 Markdown 笔记、补足理解、建立知识关联 | “用 $obsidian-knowledge-curator 整理 PLM 笔记。” |
 
 需要“学习后保存为笔记”时，先讲清知识，再把主线、例子和来源整理成笔记。各 skill 也能单独使用。
 
@@ -37,7 +37,7 @@ research-skill-kit/
 
 新增 skill 时创建 `skills/<名称>/SKILL.md`，在 YAML 中写 `name` 和 `description`，添加必要参考并更新本页索引。用一个真实任务查看输出，再据反馈调整。无需安装依赖或运行测试框架。
 
-Obsidian 的本机默认库位于 `~/.config/research-skill-kit/local.json` 的 `obsidian.vault` 字段；当次指定的路径优先。
+笔记 skill 支持普通本地或服务器目录，历史调用名 `obsidian-knowledge-curator` 保留，便于继续使用。Obsidian 的本机默认库位于 `~/.config/research-skill-kit/local.json` 的 `obsidian.vault` 字段；当次指定的路径优先。
 
 ## 来源与版本
 
