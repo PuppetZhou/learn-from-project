@@ -11,6 +11,7 @@
 | 不知道项目各部分如何一起工作 | [项目导览](repository-walkthrough.md) |
 | 不知道从问题怎样想到实现 | [从问题到设计](task-to-design.md) |
 | 希望老师带着写或操作 | [引导实操](guided-practice.md) |
+| 需要编写或改写简洁、可读的示范代码 | [教学代码](teaching-code.md) |
 | 想学如何找到错误或理解性能问题 | [调试教学](debugging-and-optimization.md) |
 | 需要连续学习一个研究项目 | [项目课程](research-project-learning.md) |
 
