@@ -4,6 +4,8 @@
 
 | 当前难点 | 参考 |
 | --- | --- |
+| 复杂概念不好理解，需要调整语言、例子或解释深度 | [表达与分层讲解](explanation.md) |
+| 需要澄清学习目标、讨论路线或保存跨轮进度 | [学习讨论与进度](learning-dialogue.md) |
 | 概念陌生、领域对象或数据含义不清 | [领域背景](background-and-data.md) |
 | 不理解环境、路径、进程或计算机机制 | [计算机背景](computing-foundations.md) |
 | 公式、模型机制与直觉接不上 | [数学与机制](math-and-mechanisms.md) |
